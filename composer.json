@@ -1,0 +1,11 @@
+{
+	"name": "jqtags/jqx-tags",
+	"type": "tag",
+	"description": "fancy inline box",
+	"keywords": ["x-tag", "polymer", "pitana"],
+	"license": "MIT",
+	"require": {
+		"webmodules/jqtag": ">=0.0.0",
+		"jqmodules/x-editable": "1.5.2"
+	}
+}

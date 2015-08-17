@@ -1,0 +1,11 @@
+{
+	"name": "jqtags/jqx-tags",
+	"jqtags/jqx-tags": {
+		"js": ["jqtags.x.tags.js"],
+		"on": ["webmodules/jqtag", "jqmodules/x-editable"]
+	},
+	"jqtags/jqx-tags/test": {
+		"js": ["test/jqtags.x.tags.test.js"],
+		"on": ["jqtags/jqx-tags"]
+	}
+}
