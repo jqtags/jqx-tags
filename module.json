@@ -2,7 +2,7 @@
 	"name": "jqtags/jqx-tags",
 	"jqtags/jqx-tags": {
 		"js": ["jqtags.x.tags.js"],
-		"on": ["webmodules/jqtag", "jqmodules/x-editable"]
+		"on": ["webmodules/jqtag", "jqmodules/select2", "jqmodules/x-editable"]
 	},
 	"jqtags/jqx-tags/test": {
 		"js": ["test/jqtags.x.tags.test.js"],

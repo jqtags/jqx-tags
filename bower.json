@@ -1,14 +1,14 @@
 {
-	"name": "jqtags-jqx-tags",
-	"main": "jqtags.x.tags.js",
-	"authors": ["Lalit Tanwar <lalit.tanwar07@gmail.com>"],
-	"description": "fancy bootstrap inline edit",
-	"keywords": ["pitana", "jquery"],
-	"dependencies": {
-		"webmodules-jqtag": ">=0.0.0",
-		"jqmodules-x-editable": ">=1.5.2",
-    "select2": "~4.0.0"
-	},
-	"license": "MIT",
-	"ignore": ["**/.*", "node_modules", "bower_components"]
+  "name": "jqtags-jqx-tags",
+  "main": "jqtags.x.tags.js",
+  "authors": ["Lalit Tanwar <lalit.tanwar07@gmail.com>"],
+  "description": "fancy bootstrap inline edit",
+  "keywords": ["pitana", "jquery"],
+  "dependencies": {
+    "webmodules-jqtag": ">=0.0.0",
+    "jqmodules-x-editable": ">=1.5.2",
+    "jqmodules-select2": "3.5.3"
+  },
+  "license": "MIT",
+  "ignore": ["**/.*", "node_modules", "bower_components"]
 }
