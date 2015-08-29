@@ -2,31 +2,6 @@ _tag_("jqtags.x.tags",function(select){
 
   var jq = module("jQuery");
 
-  //$.fn.editable.defaults.mode = 'inline';
-  $.fn.editable.defaults.validate = function(v){
-    //console.log("validating",v);
-    //return "Fuck you"
-  };
-
-
-  var getCustomData = function(callback,queryCallback){
-    jQuery.fn.select2.amd.require(
-      ['select2/data/array', 'select2/utils'],
-      function (ArrayData, Utils) {
-        function CustomData($element, options) {
-          CustomData.__super__.constructor.call(this, $element, options);
-        }
-
-        Utils.Extend(CustomData, ArrayData);
-
-        CustomData.prototype.query = queryCallback;
-
-        callback(CustomData);
-      });
-  };
-
-
-
   return {
     tagName: "jqx-tags",
     events: {
@@ -52,8 +27,7 @@ _tag_("jqtags.x.tags",function(select){
     },
     attachedCallback : function () {
       var self = this;
-      this.$a =
-        this.$.innerHTML = '<a href=# data-type=select2 data-title="'+ this.$.placeholder +'" ></a>';
+      this.$.innerHTML = '<a href=# data-type=select2 data-title="'+ this.$.placeholder +'" ></a>';
       this.$a =jQuery(this.$).find("a");
       self.mySelectedOptions ={};
       self.selected = [];
@@ -107,6 +81,8 @@ _tag_("jqtags.x.tags",function(select){
       })).trigger("change");
     },
     detachedCallback : function(){
+      this.$a.editable("hide");
+      this.$a.editable("disable");
       this.$a.editable("destroy");
     },
     setValue : function(newValue){
